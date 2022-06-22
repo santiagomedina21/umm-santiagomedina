@@ -66,6 +66,9 @@
     height: 200px;
 
 }
+.seccion1 {
+    padding-top: 100px;
+}
 
 .seccion2 {
     grid-area: seccion2;
@@ -136,3 +139,41 @@
         transition: .5s;
     }
 }
+
+/* responsive */
+@media (max-width: 768px) {
+    .seccion1 p {
+        width: 50vw;
+        height: 100px;
+}
+.seccion1 {
+    padding-bottom: 100px;
+}
+.seccion2{
+    padding-bottom: 20px;
+}
+}
+
+@media (max-width: 375px) {
+    .nav a {
+        padding: 5px 5px;
+    }
+    .seccion1 p {
+        width: 50vw;
+        height: 100px;
+        overflow: scroll;
+        
+        
+    }
+    .seccion1 img {
+        width: 100px;
+        height: 100px;
+    
+    }    
+    .seccion2 button {
+        width: 100px;
+        height: 50px;
+        font-size: 1rem;
+    }
+}
+
